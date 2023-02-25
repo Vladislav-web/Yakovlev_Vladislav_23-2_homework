@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e2c4c;
+  font-size: 70px;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.action-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+button {
+  border-radius: 10px;  
+  border: none;
+  background-color: #e7d9fc;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 30px;
+} 
+
+.clock { 
+  background: url(../img/clock.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+}
+
+@keyframes clock-go {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.clock-go {
+  animation-name: clock-go;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
